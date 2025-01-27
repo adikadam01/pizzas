@@ -167,3 +167,173 @@
 </body>
 
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <button> <img src="phone.png" alt="" class="tele">  Order
+        </button>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#best">Best</a></li>
+            <li><a href="#pizzas">Pizzas</a></li>
+            <li><a href="#">Order</a></li>
+        </ul>
+        <!-- From Uiverse.io by Botwe-Felix5820 -->
+    </nav>
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <div id="home">
+        <div class="text1">
+            <div class="typing-demo">
+                <h1>Pizza Town <img src="tori.png" alt=""></h1>
+            </div>
+        </div>
+        <div class="pizza1">
+            <img src="pizza1.png" alt="pizza1">
+
+            <p>Pizza Town, a vibrant new pizza outlet in Pune, is the ultimate destination for pizza lovers. Offering a
+                wide range of hand-tossed pizzas with fresh ingredients and authentic flavors, it caters to every
+                craving. Whether you’re into classic Margheritas or bold, gourmet toppings, Pizza Town has something for
+                everyone. With a cozy ambiance and quick service, it’s perfect for family outings, hangouts, or solo
+                indulgences. Pizza Town promises a slice of happiness!
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- ======================================================================================================================================== -->
+
+    <div id="best">
+        <h1 class="best">The Best</h1>
+        <p>Our some of the best Pizzas that you will Love..</p>
+        <div class="general-container">
+            <input class="radio" type="radio" name="card" id="cardUno" checked />
+               <label class="content" for="cardUno">
+                  <h1 class="title-card">
+                     Margreeta
+                  </h1>
+                  <h3 class="card-title subsubtitle">
+                    <span>EXAMPLE SOME ADDITIONS</span>
+                  </h3>
+               </label>
+           
+              <input class="radio" type="radio" name="card" id="cardDos" />
+                <label class="content" for="cardDos">
+                  <h1 class="title-card">
+                    Paneer Cheese
+                  </h1>
+                  <h3 class="card-title subsubtitle">
+                    <span>EXAMPLE SOME ADDITIONS</span>
+                  </h3>
+               </label>
+                     
+             <input class="radio" type="radio" name="card" id="cardTres" />
+                <label class="content" for="cardTres">
+                  <h1 class="title-card">
+                     Chicken Pizza
+                  </h1>
+                  <h3 class="card-title subsubtitle">
+                    <span>EXAMPLE SOME ADDITIONS</span>
+                  </h3>
+               </label>
+         
+            <input class="radio" type="radio" name="card" id="cardCuatro" />
+               <label class="content" for="cardCuatro">
+                  <h1 class="title-card">
+                     Cheese Corn
+                  </h1>
+                  <h3 class="card-title subsubtitle">
+                    <span>EXAMPLE SOME ADDITIONS</span>
+                  </h3>
+               </label>
+           </div>
+    </div>
+
+    <!-- ===================================================================================================================================== -->
+
+
+    <div id="pizzas">
+        <h1 class="best">Pizzas</h1>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                <img src="pepproni.jpg" style="height:50%; width:30%">
+                <div class="text">Pepproni Pizza</div>
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <img src="veggie.avif" style="height: 50% ; width:30%">
+                <div class="text">Veggiee Load Pizza</div>
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="hamandpine.jpg" style="height: 50%; width:30%">
+                <div class="text">Ham & Pineapple </div>
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="supreme.jpg" style="height: 50%; width:30%">
+                <div class="text">Supreme Pizza</div>
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="bbq.jpg" class="bbq">
+                <div class="text">BBQ Chicken Pizza</div>
+            </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        
+
+        <script>
+            let slideIndex = 0;
+            showSlides();
+        
+            function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 2500); // Change image every 2 seconds
+            }
+        </script>
+    </div>
+
+</body>
+
+</html>
